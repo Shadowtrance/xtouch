@@ -223,7 +223,7 @@ void xtouch_screen_toggleTFTFlip()
 void xtouch_screen_setupTFTFlip()
 {
     byte eepromTFTFlip = xtouch_screen_getTFTFlip();
-    tft.setRotation(eepromTFTFlip == 3 ? 1 : 3);
+    tft.setRotation(eepromTFTFlip == 1 ? 3 : 1);
     //x_touch_touchScreen.setRotation(eepromTFTFlip == 1 ? 3 : 1);
 }
 
